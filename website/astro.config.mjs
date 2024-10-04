@@ -7,7 +7,7 @@ export default defineConfig({
 	base: '/ML-4641/',
 	integrations: [
 		starlight({
-			title: 'My Docs',
+			title: 'HeartGuard AI',
 			social: {
 				github: 'https://github.com/withastro/starlight',
 			},
