@@ -3,8 +3,7 @@ title: Introduction/Background
 description: A guide in my new Starlight docs site.
 ---
 
-Guides lead a user through a specific task they want to accomplish, often with a sequence of steps.
-Writing a good guide requires thinking about what your users are trying to do.
+Cardiovascular diseases (CVDs) affect the heart and blood vessels, leading to conditions like heart attacks and strokes. Heart disease is one of the most known and deadly diseases in the world (Ahmad & Polat, 2023). That’s why early detection is critical, and machine learning has shown promise in improving CVD diagnosis (Ahmad & Kalimullah, 2021). We propose using the publicly available Cardiovascular Disease dataset, with 70,000 patient records and 11 features, such as age, cholesterol, and blood pressure. By applying machine learning techniques, we aim to identify patterns to predict CVD presence and enhance early detection efforts. The dataset is available here.
 
 ## Further reading
 
