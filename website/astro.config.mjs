@@ -20,11 +20,8 @@ export default defineConfig({
 						{ label: 'Problem Definition', slug: 'proposal/problem' },
 						{ label: 'Methodology', slug: 'proposal/methodology' },
 						{ label: 'Results and Discussion ', slug: 'proposal/result' },
+						{ label: "References", slug: 'proposal/references' },
 					],
-				},
-				{
-					label: 'Reference',
-					autogenerate: { directory: 'reference' },
 				},
 			],
 		}),
