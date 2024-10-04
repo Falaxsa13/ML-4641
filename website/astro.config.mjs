@@ -13,10 +13,14 @@ export default defineConfig({
 			},
 			sidebar: [
 				{
-					label: 'Guides',
+					label: 'Proposal',
 					items: [
 						// Each item here is one entry in the navigation menu.
-						{ label: 'Example Guide', slug: 'guides/example' },
+						{ label: 'Introduction', slug: 'proposal/introduction' },
+						{ label: 'Problem Definition', slug: 'proposal/problem' },
+						{ label: 'Methodology', slug: 'proposal/methodology' },
+						{ label: 'Results and Discussion ', slug: 'proposal/result' },
+						{ label: 'Conclusion', slug: 'proposal/conclusion' },
 					],
 				},
 				{
