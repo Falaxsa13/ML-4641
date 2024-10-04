@@ -15,13 +15,11 @@ description: Analyzing the outcomes of applying ML models to cardiovascular dise
 ### Project Goals
 - 🚀 **Demonstrate the applicability of ML methods** to real-world medical data and assess their reliability compared to existing implementations.
 - 🔎 **Gain a deeper understanding of cardiovascular disease** (CVD) and identify the most significant factors contributing to CVD risk.
-- 🎯 **Stretch Goal**: Enhance the algorithms to predict more specific heart-related conditions (e.g., heart attacks, arrhythmias), moving beyond general CVD risk assessment.
-
 ---
 
 ### Expected Results
 
 - ✅ **Accuracy of ≥ 70%**, based on existing literature.
-- 🏆 **Identification of highest risk factors** for cardiovascular disease, helping to inform both the medical community and individuals at risk.
+- 🏆 **Identification of highest risk factors** for cardiovascular disease
   
 ---
