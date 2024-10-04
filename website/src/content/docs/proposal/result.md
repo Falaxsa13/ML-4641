@@ -1,11 +1,27 @@
 ---
-title: Introduction/Background
-description: A guide in my new Starlight docs site.
+title: Results and Discussion
+description: Analyzing the outcomes of applying ML models to cardiovascular disease prediction.
 ---
 
-Guides lead a user through a specific task they want to accomplish, often with a sequence of steps.
-Writing a good guide requires thinking about what your users are trying to do.
+### Quantitative Metrics
+- **Accuracy**: Measures the proportion of correct predictions.
+- **Precision**: The proportion of true positive results among all positive results predicted by the model.
+- **Recall**: The ability of the model to find all the positive instances.
+- **F1 Score**: The harmonic mean of precision and recall, balancing both metrics.
+- **Confusion Matrix**: Provides a detailed breakdown of true positives, false positives, true negatives, and false negatives.
 
-## Further reading
+---
 
-- Read [about how-to guides](https://diataxis.fr/how-to-guides/) in the Diátaxis framework
+### Project Goals
+- 🚀 **Demonstrate the applicability of ML methods** to real-world medical data and assess their reliability compared to existing implementations.
+- 🔎 **Gain a deeper understanding of cardiovascular disease** (CVD) and identify the most significant factors contributing to CVD risk.
+- 🎯 **Stretch Goal**: Enhance the algorithms to predict more specific heart-related conditions (e.g., heart attacks, arrhythmias), moving beyond general CVD risk assessment.
+
+---
+
+### Expected Results
+
+- ✅ **Accuracy of ≥ 70%**, based on existing literature.
+- 🏆 **Identification of highest risk factors** for cardiovascular disease, helping to inform both the medical community and individuals at risk.
+  
+---
