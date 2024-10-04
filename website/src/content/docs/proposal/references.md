@@ -16,7 +16,11 @@ description: All the literature used for the proposal and additional information
 
 ## Contributions 
 Alexandra - Methods, Dataset
+
 Hans - Github Page, Problem Definition
+
 Kunal - Methods
+
 Miguel - Methods, Results & Discussion
+
 Yamil - Intro/Background
