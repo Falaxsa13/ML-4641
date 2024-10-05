@@ -28,3 +28,7 @@ description: All the literature used for the proposal and additional information
 - **Kunal** - Methods
 - **Miguel** - Methods, Results & Discussion
 - **Yamil** - Intro/Background
+
+---
+
+![Huge Image](../../../assets/chart.png)

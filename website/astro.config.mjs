@@ -8,6 +8,9 @@ export default defineConfig({
 	integrations: [
 		starlight({
 			title: 'HeartGuard AI',
+			customCss: [
+        './src/styles/custom.css', // Path to your custom CSS
+      ],
 			social: {
 				github: 'https://github.com/withastro/starlight',
 			},
