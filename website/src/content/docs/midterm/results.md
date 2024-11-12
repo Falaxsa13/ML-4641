@@ -8,6 +8,7 @@ description: Results and discussion of models applied
 Both Part A and B reveal similar feature relationships in predicting CVD. Strong correlations appear between systolic (ap_hi) and diastolic (ap_lo) blood pressure, as well as between blood pressure and pulse pressure. Minor differences in correlation strengths suggest variations due to different preprocessing methods, like SMOTE in Part B. Blood pressure and cholesterol emerge as key predictors, while lifestyle factors show weaker correlations.
 
 ![Huge Image](../../../assets/heatmap.png)
+###### Figure 1. Feature Correlation Heatmap (Part A to the left, Part B to the right)
 
 **Part A**
 The results highlight the model's performance in predicting CVD. PCA shows data distribution, with blood pressure correlations prominent. Confusion matrices and an AUC of 0.79 indicate moderate accuracy. Key predictors are ap_hi, ap_lo, cholesterol, and age, marking them as crucial for assessing CVD risk.
