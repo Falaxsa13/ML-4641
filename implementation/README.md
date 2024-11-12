@@ -1,3 +1,5 @@
+This folder contains the code for the data cleaning and ML methods implementation. Future implementations will live here as well.
+
 # Data Cleaning Changes
 
 - **Age Conversion**: Adjusted age calculation to account for leap years.
