@@ -26,6 +26,17 @@ export default defineConfig({
 						{ label: "References", slug: 'proposal/references' },
 					],
 				},
+								{
+					label: 'Midterm',
+					items: [
+						// Each item here is one entry in the navigation menu.
+						{ label: 'Introduction', slug: 'midterm/introduction' },
+						{ label: 'Problem Definition', slug: 'midterm/problem' },
+						{ label: 'Methods', slug: 'midterm/methods' },
+						{ label: 'Results and Discussion ', slug: 'midterm/results' },
+						{ label: "References", slug: 'midterm/references' },
+					],
+				},
 			],
 		}),
 	],
