@@ -9,25 +9,37 @@ Both Part A and B reveal similar feature relationships in predicting CVD. Strong
 
 ![Huge Image](../../../assets/heatmap.png)
 
-<center> ###### Figure 1. Feature Correlation Heatmap (Part A to the left, Part B to the right) </center>
+###### Figure 1. Feature Correlation Heatmap (Part A to the left, Part B to the right)
 
 **Part A**
 The results highlight the model's performance in predicting CVD. PCA shows data distribution, with blood pressure correlations prominent. Confusion matrices and an AUC of 0.79 indicate moderate accuracy. Key predictors are ap_hi, ap_lo, cholesterol, and age, marking them as crucial for assessing CVD risk.
 
 ![Huge Image](../../../assets/pca.png)
 
+###### Figure 2. PCA of Training Data
+
 ![Huge Image](../../../assets/rocPartA.png)
+
+###### Figure 3. ROC Curve (without, left and with PCA, right)
 
 ![Huge Image](../../../assets/confmatrixPartA.png)
 
+###### Figure 4. Conclusion Matrix Heatmap (without, left and with PCA, right)
+
 ![Huge Image](../../../assets/featureimportance.png)
+
+###### Figure 5. Permutation and Feature Importance
 
 **Part B**
 Part B results show logistic regression and SGD classifier models effectively predicting CVD. The feature correlation heatmap highlights strong relationships, particularly among blood pressure indicators, with cholesterol and age as key CVD predictors. Confusion matrices demonstrate similar classification performance for both models, while ROC curves show moderate discriminatory power, with AUCs of 0.79 for logistic regression and 0.78 for SGD. Blood pressure and cholesterol emerge as primary factors in assessing CVD risk.
 
 ![Huge Image](../../../assets/rocPartB.png)
 
+###### Figure 6. Confusion Matrix Heatmap Part B
+
 ![Huge Image](../../../assets/confmatrixPartB.png)
+
+###### Figure 7. ROC Curve Part B
 
 # Discussion
 
