@@ -78,7 +78,7 @@ description: Detailed description of the ML models used in the heart disease pre
 
 ---
 
-### **Logistic Regression 📈**
+### **📈 Logistic Regression**
 
 For our first methodology, we implemented **Logistic Regression** on the cleaned data. **LogReg** is a good choice for checking if someone has a **CVD** because:
 
@@ -94,9 +94,9 @@ For our first methodology, we implemented **Logistic Regression** on the cleaned
 
 - **LogReg uses the logistic function** to map any real-valued number into a probability. The logistic function outputs values between **0 and 1**, which works great for classification because it means we can interpret the output as a probability.
 
-- **LogReg models are relatively easy to interpret**, especially when considering the coefficients. They represent the change in the odds of the outcome for a change in a variable we could modify, holding all other variables constant. This allows us to understand the influence of each feature on the outcome. For example, if we wanted to see how **glucose levels** were correlated with **alcohol**, we can use a visualizer like a **heatmap** to see how close the two variables are.
+- **LogReg models are relatively easy to interpret**, especially when considering the coefficients. They represent the change in the odds of the outcome for a change in a variable we could modify, holding all other variables constant. This allows us to understand the influence of each feature on the outcome. For example, if we wanted to see how **glucoses levels** were correlated with **alcohol**, we can use a visualizer like a **heatmap** to see how close the two variables are.
 
-### **Implementation 💻**
+#### **Implementation 💻**
 
 We implemented **two codes** for our logistic regression to predict cardiovascular disease (CVD), but with distinct methodologies to improve model performance and validation.
 
@@ -105,7 +105,7 @@ We implemented **two codes** for our logistic regression to predict cardiovascul
 
 These variations provide a more comprehensive evaluation of logistic regression and alternative techniques, aiding in model validation and robustness.
 
-#### **Part A - Logistic Regression with Fixed PCA for CVD Prediction**
+##### **Part A - Logistic Regression with Fixed PCA for CVD Prediction**
 
 This code performs logistic regression to predict cardiovascular disease (CVD) using various health-related features from a dataset. Initially, it preprocesses the data by:
 
@@ -141,7 +141,7 @@ This makes it easier to interpret results.
 
 In addition, the code conducts **feature analysis** by calculating and plotting feature importance using the logistic regression coefficients, odds ratios, and permutation importance, helping identify the impact of individual features on the prediction of cardiovascular disease.
 
-#### **Part B - Advanced CVD Prediction with SMOTE, Tuned PCA, and SGD 🏋️‍♂️**
+##### **Part B - Advanced CVD Prediction with SMOTE, Tuned PCA, and SGD 🏋️‍♂️**
 
 This code uses logistic regression and an **SGD (Stochastic Gradient Descent) classifier** to predict cardiovascular disease (CVD) based on a range of health-related features. It begins by:
 
@@ -179,3 +179,56 @@ Additional visualizations include:
 - **ROC curves**
 
 This provides a comprehensive view of model performance and feature relationships.
+
+---
+
+title: Decision Tree 🌳
+description: Detailed description of the Decision Tree model used in the heart disease predictor project.
+
+---
+
+### 🌳 **Decision Tree**
+
+The second model this project utilizes is a **decision tree model** to predict the presence of **cardiovascular disease** based on key medical and lifestyle features. Its ability to provide clear decision-making paths and handle complex interactions between features makes it an effective choice for this task.
+
+- The model’s strength lies in its **interpretability**, as its decision-making process can be visualized and understood by stakeholders without technical expertise. This is particularly valuable in a medical context where **trust** in the model is critical.
+
+- **Non-linear relationships** among features are captured naturally, which is important since cardiovascular disease risk factors often interact in complex ways.
+
+- **No need for feature scaling** simplifies the preprocessing pipeline while preserving the natural units of measurement for medical data.
+
+- Handling **mixed data types** allows the model to work seamlessly with datasets containing both numerical and categorical features, such as blood pressure levels, cholesterol categories, and lifestyle habits like smoking or alcohol consumption.
+
+- **Focus on relevant features** makes the model robust to irrelevant or redundant information in the dataset.
+
+- **Flexibility** makes it effective as both a standalone model and as part of ensemble methods like **Random Forests** or **Gradient Boosting**, which can enhance predictive performance.
+
+---
+
+#### 🛠️ **Implementation Process**
+
+The implementation began with **preprocessing the data** to prepare it for model training. Relevant features were selected based on their importance in predicting cardiovascular disease, including factors like **age, gender, blood pressure**, and **lifestyle habits**. Boolean features were explicitly converted into integer representations to ensure compatibility with the decision tree model. The dataset was then **split into training and testing subsets** using an **80-20 ratio** to train the model and evaluate its performance on unseen data.
+
+Once the preprocessing was complete, a **decision tree classifier** was initialized with specific hyperparameters. The tree depth was limited to **five levels** to prevent overfitting and ensure the model remained interpretable. Additionally, a **minimum number of 20 samples per split** was enforced to ensure statistically meaningful decisions at each node. The model was then **trained on the training data** to learn the patterns and relationships between the features and the target variable, which indicated the presence of cardiovascular disease.
+
+After training, the model’s performance was evaluated on the test data using standard classification metrics. **Predictions were made for the test set**, and metrics such as **accuracy, precision, recall**, and **F1-score** were calculated. A **confusion matrix** was generated to provide a detailed breakdown of true and false predictions. The decision tree was **visualized** to interpret its decision paths, and a **heatmap of the confusion matrix** was created for better visual representation of the classification results. This comprehensive approach ensured both robust model evaluation and interpretability.
+
+### 🌲 **Random Forest**
+
+The final model for this project uses a **random forest** to predict the presence of **cardiovascular disease**. A random forest is an **ensemble learning method** that combines multiple decision trees to make predictions and in the context of CVD, it is a good choice for the following reasons:
+
+- **By aggregating the outputs from a diverse set of decision trees**, it can reduce the likelihood of overfitting compared to a single decision tree. This helps to ensure that the model doesn't overly rely on patterns that might only be present in a subset of the data, leading to better generalization and improved accuracy.
+
+- **Differences in patient characteristics** often result in noise and variability. Random Forests average the predictions of multiple trees, meaning that outliers or noisy data points are less likely to overly influence the model's decision-making process.
+
+- **They can easily capture non-linear relationships**, making them more effective than linear models when dealing with features that may have complex relationships. This allows to better model the interactions between multiple features, leading to improved predictive performance.
+
+- **They are inherently good at capturing interactions between features without the need for explicit feature engineering**. This ability to model interactions implicitly is advantageous when dealing with medical data, where multiple risk factors often work in tandem to influence outcomes.
+
+---
+
+#### 🛠️ **Implementation Process**
+
+The data was first **preprocessed** in order to prepare it for the specific model. The data was then **split into training and testing datasets** with an **80-20 ratio**. Once complete, a **random forest classifier** was implemented with a depth of **5** to compare results to that of the decision tree, and depths of **3, 6, 9, and 12** were also explored to see how the model behaved.
+
+After training, the model’s performance was evaluated on the test data. Metrics such as **accuracy, precision, recall**, and **F1-score** were calculated. The results also allowed for a visualization of **permutation feature importance**, which gives a better idea on what features contribute to the results the most. Overall these are a robust set of results to draw conclusions from.
