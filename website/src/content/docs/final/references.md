@@ -17,6 +17,14 @@ description: All the literature used for the proposal and additional information
 
 ### Gantt Chart
 
+![Huge Image](../../../assets/chart.png)
+
 ---
 
 ### 👥 Contributions
+
+- **Alexandra** - Results and Discussion, Report
+- **Hans** - GitHub Web Page, Random Forest
+- **Kunal** - Results and Discussion, Report
+- **Miguel** - ML Method implementation, website
+- **Yamil** - Data Preprocessing
