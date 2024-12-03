@@ -23,8 +23,8 @@ description: All the literature used for the proposal and additional information
 
 ### 👥 Contributions
 
-- **Alexandra** - Results and Discussion, Report
-- **Hans** - GitHub Web Page, Random Forest
-- **Kunal** - Results and Discussion, Report
-- **Miguel** - ML Method implementation, website
-- **Yamil** - Data Preprocessing
+- **Alexandra** - Decision Tree implementation, Results and Discussion
+- **Hans** - GitHub Web Page, Data Preprocessing
+- **Kunal** - Random Forest implementation, Results and Discussion
+- **Miguel** - Logistic Regression implementation, website
+- **Yamil** - Data Preprocessing, GitHub Web Page
