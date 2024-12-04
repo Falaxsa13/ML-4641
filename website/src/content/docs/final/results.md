@@ -65,6 +65,27 @@ The decision tree model achieved an **accuracy** of **72.84%**, demonstrating it
 
 The random forest model was evaluated at different **tree depths (3, 6, 9, and 12)** with and without **Principal Component Analysis (PCA)** for dimensionality reduction. At a depth of **3**, the model achieved an **accuracy** of **72%** for both PCA and non-PCA, with **precision** values of **76% (PCA)** and **75% (non-PCA)**. **Recall** was **64%** for both settings, resulting in an **F1-score** of **70%** for PCA and **69%** for non-PCA. Increasing the depth to **6** led to an **accuracy** of **73%**, with precision slightly higher for non-PCA (**76%**) compared to PCA (**75%**). The recall increased to **66%** for both configurations, and the F1-score remained at **70%**. At depths **9** and **12**, both PCA and non-PCA models reached similar performance levels, with an **accuracy** of **73%**, precision around **75-76%**, recall at **66-68%**, and an **F1-score** of **71%**. The **confusion matrix heatmaps** and **ROC curves** were also plotted for each depth which can be observed below:
 
+![Huge Image](../../../assets/AOC1.png)
+![Huge IMage](../../../assets//AOC2.png)
+
+###### _Figure 10. Comparison of ROC Curves for depth 3 with and without PCA_
+
+    PCA, as shown in Figure III, did not change the results of testing that much, affecting about a 1% difference in accuracy, recall, and precision values across PCA and non-PCA treated models. Additionally, a higher depth led to the model labelling more things as true, causing less true negatives and more true positives, as well as more false positives. The exact numbers are shown below, in Figure IV.
+
+![Huge Image](../../../assets/Confusion3.png)
+![Huge IMage](../../../assets//Confusion6.png)
+![Huge Image](../../../assets/Confusion9.png)
+![Huge IMage](../../../assets//Confusion12.png)
+
+###### _Figure 11. Comparison of Confusion Matrices for varying depths without PCA_
+
+An interesting note is that with PCA, the model’s feature importances change from prioritizing systolic blood pressure to heavily prioritizing age, as shown below:
+
+![Huge Image](../../../assets/FI3.png)
+![Huge IMage](../../../assets//FI4.png)
+
+###### _Figure 12 Comparsion of Feature Importances of Depth 6 Forests_
+
 ---
 
 ## **Discussions**
